@@ -13,7 +13,7 @@ spcasm -f plain soundengine-spc700.s soundEngine-SPC700.BIN
 ```
 The resulting soundEngine-SPC700.BIN file can be included in the SNES game ROM and then transferred to the APU. 
 
-**Note that this binary file represents the whole memory space from 0x000 to 0xFFFF. If you wish to retain the 200 Byte startup program to transfer data, then the first 200 bytes of the file must be skipped in the transfer to the APU!**
+**Note that this binary file represents the whole memory space from 0x000 to 0xFFFF. If you wish to retain the 0x200 byte startup program to transfer data, then the first 0x200 bytes of the file must be skipped in the transfer to the APU!**
 
 ## Future Work
 Currently the sound engine code is a snap shot of the sound engine as is present in the SNES game [〇 Star](https://inkbox-software.itch.io/zerostar). Future changes will come to a more generic version of the sound driver later including:
